@@ -8,10 +8,11 @@ interface PostProps {
 
 function Post({ post }: PostProps) {
     const preview = post.content.split(" ").slice(0, 12).join(" ") + "...";
-    const isNew = post.date === "2026-09-22";
+    const today = new Date().toISOString().split("T")[0]; // Get today's date in YYYY-MM-DD format
+    const isNew = post.date === today;
   return (
     <article className={post.author === "janvier" ? "post featured" : "post"}>
-      {isNew && <span className="new-badge">New post</span>}
+      {isNew && <span className="new-badge">New Post</span>}
       <h3>{post.title}</h3>
       <p className="author">By {post.author}</p>
       <p>{preview}</p>
