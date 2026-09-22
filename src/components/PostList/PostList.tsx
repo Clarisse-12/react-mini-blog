@@ -30,7 +30,7 @@ function PostList() {
     ];
 
     return (
-        <section>
+        <section className="post-list">
             <h2>Recent Posts</h2>
             {posts.map((post) => (
                 <Post key={post.id} post={post} />
