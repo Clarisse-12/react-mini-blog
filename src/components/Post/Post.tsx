@@ -1,4 +1,5 @@
 import "./Post.css"
+import {memo} from "react";
 import type { Post as PostType } from '../../types/Post';
 
 interface PostProps {
@@ -8,10 +9,10 @@ interface PostProps {
 function Post({ post }: PostProps) {
     const preview = post.content.split("").slice(0,12).join(" ") + "...";
   return (
-    <article className="post">
-      <h2>{post.title}</h2>
-      <p>By {post.author}</p>
-      <p>{post.content}</p>
+    <article className={post.author === "janvier" ? "post featured" : "post"}>
+      <h3>{post.title}</h3>
+      <p className="author">By {post.author}</p>
+      <p>{preview}</p>
       <small
       style={{
         fontSize: "14px",
@@ -23,4 +24,4 @@ function Post({ post }: PostProps) {
   );
 }
 
-export default Post;
+export default memo(Post);
