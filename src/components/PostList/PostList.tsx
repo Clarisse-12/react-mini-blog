@@ -1,3 +1,4 @@
+import "./PostList.css"
 import Post from '../Post/Post';
 import type { Post as PostType } from '../../types/Post';
 

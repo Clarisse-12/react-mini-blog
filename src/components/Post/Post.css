@@ -1,1 +1,21 @@
-.post {}
+.post {
+    background-color: white;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    margin-top: 0;
+    color: #1f2937;
+}
+
+.author {
+    color: #6b7280;
+    font-weight: bold;
+}
+
+.post small {
+    color: #6b7280;
+}
