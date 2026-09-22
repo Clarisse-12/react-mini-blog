@@ -5,6 +5,7 @@ interface PostProps {
 }
 
 function Post({ post }: PostProps) {
+    const preview = post.content.split("").slice(0,12).join(" ") + "...";
   return (
     <article>
       <h2>{post.title}</h2>
