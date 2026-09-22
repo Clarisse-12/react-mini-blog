@@ -1,5 +1,6 @@
 import "./Post.css"
 import {memo} from "react";
+import withLogger from "../../hoc/withLogger";
 import type { Post as PostType } from '../../types/Post';
 
 interface PostProps {
@@ -27,4 +28,5 @@ function Post({ post }: PostProps) {
   );
 }
 
-export default memo(Post);
+export const optimizedPost = memo(Post);
+export default withLogger(optimizedPost, "Post");
