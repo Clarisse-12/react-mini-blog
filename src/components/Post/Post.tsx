@@ -7,7 +7,7 @@ interface PostProps {
 }
 
 function Post({ post }: PostProps) {
-    const preview = post.content.split("").slice(0,12).join(" ") + "...";
+    const preview = post.content.split(" ").slice(0, 12).join(" ") + "...";
     const isNew = post.date === "2026-09-22";
   return (
     <article className={post.author === "janvier" ? "post featured" : "post"}>
