@@ -12,7 +12,13 @@ function Post({ post }: PostProps) {
       <h2>{post.title}</h2>
       <p>By {post.author}</p>
       <p>{post.content}</p>
-      <small>{post.date}</small>
+      <small
+      style={{
+        fontSize: "14px",
+        fontStyle: "italic",
+        }}
+        >
+            {post.date}</small>
     </article>
   );
 }

@@ -1,3 +1,4 @@
+import "./App.css"
 import Header from "./components/Header/Header.tsx";
 import PostList from "./components/PostList/PostList.tsx";
 
