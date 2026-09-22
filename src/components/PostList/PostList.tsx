@@ -17,7 +17,7 @@ function PostList() {
             title: 'A Guide to TypeScript', 
             author: 'cyiza',
             content: 'TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. It offers optional static typing, classes, and interfaces.',
-            date: '2023-02-15',
+            date: '2026-09-22',
         },
 
         {
