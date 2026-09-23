@@ -187,11 +187,7 @@ export default withLogger(optimizedPost, "Post");
 
 The implementation organizes the interface into separate header, list, and post components so each part has a clear responsibility. The `Post` interface and typed props help keep the post data consistent. Conditional classes and rendering handle the featured author and current-day badge, while Flexbox allows the post cards to sit in a horizontal layout and wrap when needed. `React.memo` and the `withLogger` wrapper also require understanding how components can be optimized and enhanced without changing their main rendering logic.
 
-## 15. Learning Reflection
 
-This project helped me understand how React functional components can be combined to build a small interface from reusable parts. I learned how to pass typed props with TypeScript, keep post data consistent with an interface, and use CSS files and Flexbox to control the layout.
-
-I also learned how conditional rendering can show information such as the current-day badge, while conditional classes can change a post's appearance. Using `React.memo` introduced a simple optimization technique, and creating `withLogger` helped me understand how Higher-Order Components can add behavior such as mount and unmount logging around another component.
 
 ## 16. External Libraries / Packages
 
